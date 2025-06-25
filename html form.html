@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple HTML Form</title>
+</head>
+<body>
+  <h2>Contact Form</h2>
+
+  <form action="/submit-form" method="post">
+    <!-- Text input -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- Email input -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Dropdown -->
+    <label for="topic">Topic:</label><br>
+    <select id="topic" name="topic">
+      <option value="feedback">Feedback</option>
+      <option value="question">Question</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <!-- Text area -->
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+    <!-- Submit button -->
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
