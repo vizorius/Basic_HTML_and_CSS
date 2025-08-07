@@ -13,7 +13,7 @@ h1 {
     border: 2px solid black;
     border-radius: 5% 5% 5% 5%;
 }
-    /*--select all square brackets--*/
+    /*--select all squares in array--*/
 
 .container .squares:nth-child(-n+4) {
     background-image: url("../icons/icons.png");
@@ -56,6 +56,18 @@ h1 {
 
 .container .squares:nth-child(-n+4):hover {
     background-image: url("../icons/icons2.png");
+    transform: scale(0.9);
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;   
+    border-radius: 25%;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 25px;
 }
 .squares:nth-child(1):hover {
     background: whitesmoke;
