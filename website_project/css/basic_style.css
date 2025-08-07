@@ -2,28 +2,27 @@ body {
     background-color: bisque;
 }
 h1 {
-    color: darkblue; 
+    color: rgb(78, 141, 93); 
     margin-left: 100px; 
-    text-shadow: 1px .5px 4px rgba(red, green, blue, alpha);
+    text-shadow: 1px 0.5px 4px rgba(175, 85, 85, 0.5);
 }
 .container {
-    width: 550px; 
+    width: 450px; 
     height: 450px;
     background-color: rgb(136, 111, 42); 
     border: 2px solid black;
-    border-radius: 5%;
+    border-radius: 5% 5% 5% 5%;
 }
-    /*-----------------------------
-    select all square brackets
-    -----------------------------*/
-    .container .squares:nth-child(-n+9) {
-        background-image: url("../icons/icons2.png");
-        color: tomato;
-        float: left;
-        width: 100px;
-        height: 100px;
-        margin: 5px;
-        border: 5px solid black;
-        border-radius: 25%;
-        cursor: pointer;
+    /*--select all square brackets--*/
+
+.container .squares:nth-child(-n+4) {
+    background-image: url("../icons/icons.png");
+    color: tomato;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
     }
