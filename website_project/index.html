@@ -2,42 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <link rel="stylesheet" href="./css/...css">
   <title>Paint Spraying with vizorius</title>
 </head>
 <body>
-  <ul>
-    <li><a href="#home" id="link">HOME</a></li>
-    <li><a href="#gallery" id="link">GALLERY</a></li>
-    <li><a href="#reservations" id="link">RESERVATIONS</a></li>
-  </ul>
 
-<!-- start home -->
+  <!-- navigation -->
+    <div class="wrap">
+        <div class="menu-container">
+            <ul class="menu">
+                <a href="#home"><li>HOME</li></a>
+                <a href="#gallery"><li>GALLERY</li></a>
+                <a href="#contact"><li>RESERVATIONS</li></a>
+            </ul>
+        </div>
+    </div>
 
-<div id="home">
-  <h1>Paint Spraying with vizorius</h1>
-</div>
-<!-- end home -->
+    <!-- end navigation -->
+
+    <!-- home -->
+
+    <div id="home" class="container">
+        <div class="text-center">
+            <span class="head-main">Paint Spraying with vizorius</span>
+        </div>
+    </div>
+
+    <!-- end home -->
+
+
 
 <!-- gallery start -->
 
-<section>
-	<div id="gallery">
-	<h2>Gallery</h2>
-	<p><em>We have several paint spraying projects completed daily. Book your service today!</em></p>
+<section id="gallery">
+    <div class="container">
+        <h1>Gallery</h1>
+        <div class="flex-container">
 
-	<!-- photo container 1 -->
-	
-		<div class="photo-container">
-			<div class="photo">
-				<img src="./images/thumbs/thumb_1.jpg" alt="panel has long scratch with two chips">
-				<div class="photo-overlay">
-				<p><strong>Click to Enlarge</strong></p>
-				<p>Variuos damages can be repaired!</p>
-				</div>
-			</div>
-		</div>
-		
-	<!-- end photo container 1 -->
+            <!-- photo container 1 -->
+            <div class="photo-container">
+                <div class="photo">
+                    <img src="./images/thumbs/thumb_1.jpg" alt="large scale of painting can be done!">
+                    <div class="photo-overlay">
+                        <p><strong>Click to Enlarge</strong></p>
+				<p>Large scale of color mathing!</p>
+                    </div>
+                </div>
+            </div>
+            <!--END PHOTO CONTAINER 1-->
+
 
 	<!-- photo container 2 -->
 	
@@ -46,7 +61,7 @@
 				<img src="./images/thumbs/thumb_2.jpg" alt="after filling damages and recoating matched color">
 				<div class="photo-overlay">
 				<p><strong>Click to Enlarge</strong></p>
-				<p>Variuos damages can be repaired!</p>
+				<p>Detailed protection beeing used!</p>
 				</div>
 			</div>
 		</div>
@@ -60,7 +75,7 @@
 				<img src="./images/thumbs/thumb_3.jpg" alt="finished job!">
 				<div class="photo-overlay">
 				<p><strong>Click to Enlarge</strong></p>
-				<p>Variuos damages can be repaired!</p>
+				<p>Perfect at all times!</p>
 				</div>
 			</div>
 		</div>
@@ -152,6 +167,7 @@
 	<!-- end photo container 9 -->
 	
 	</div>
+	</div>
 </section>
 
 <!-- end gallery -->
@@ -170,32 +186,42 @@
 
 <!-- start reservations -->
 
-<section>
-	<div id="reservations">
-
-	<h2>Reservations</h2>
-	<h3>Your paint project is just around the corner. Reserve your slot today!</h3>
-	<p>Please provide us with your basic contact information.</p>
-
-	<form>
-		<input type="text" placeholder="First Name" name="first_name">
-		<input type="text" placeholder="Last Name" name="last_name">
-		<input type="email" placeholder="Email Address" name="email">
-		<input type="tel" placeholder="Phone Number" name="phone_number"><br><br>
-		<label>
-		<input type="checkbox" name="terms"> Terms and Conditions
-		</label><br><br>
-		<input type="submit" value="Submit">
-	</form>
-
-	</div>
+<section id="contact">
+    <div class="container">
+        <div class="heading-padding">
+            <h1 class="heading-padding">Reservations</h1>
+            <div class="reservation">
+                <h2>
+                    <span>Your adventure is just around the moon.</span>
+                    <br/>Reserve your flight today!
+                </h2>
+                <p class="rsvp-text">
+                    Please provide us with your basic contact information.
+                </p>
+                <div class="form-rsvp">
+                    <form action="" method="post">
+                        <input class="rsvp" type="text" value="" placeholder="First Name">
+                        <input class="rsvp" type="text" value="" placeholder="Last Name">
+                        <input class="rsvp" type="text" value="" placeholder="Email Address">
+                        <input class="rsvp" type="text" value="" placeholder="Phone Number">
+                        <div class="form-spacer">
+                            <label class="terms">Terms and Conditions</label>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 <!-- end reservations -->
 
-  <footer>
-    <p>www.paintspraying.vizorius &copy; 2025</p>
-  </footer>
-
+<!-- footer -->
+<div id="footer">
+    www.paintsprayingvizorius.com &nbsp; &nbsp; &copy; 2025
+</div>
+<!-- footer -->
 </body>
 </html>
