@@ -11,59 +11,186 @@
     <title>Ocean view!</title>
   </head>
   <body>
-    
+
+    <!-- Navbar -->
     <div class="container">
-      <h1 class="mt-5">Ocean View</h1>
-      <p class="lead">This is a simple page to showcase an ocean view.</p>
-      <img src="https://example.com/ocean_view.jpg" alt="Ocean View" class="img-fluid">
-      <p class="mt-3">Enjoy the serene beauty of the ocean!</p>
 
-        <!--navigation bar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <a class="navbar-brand text-light" href="#">Ocean View</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <p class="text-muted">This page is a demonstration of a simple HTML structure with Bootstrap styling.</p>      
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#mostvisited">England's most visited sites</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Other countries we cover
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">France</a>
+                <a class="dropdown-item" href="#">Spain</a>
+                <a class="dropdown-item" href="#">Portugal</a>
+              </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#about">About</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
+          </form>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+      </nav>
 
-<!--end navigation bar-->
+      <div class="jumbotron jumbotron-fluid bg-info text-center">
+        <div class="container">
+          <h1 class="display-4 text-light" id="home">Welcome to Ocean View!</h1>
+          <p class="lead text-light" id="about">The ocean is a vast, ever-changing expanse that covers more than two-thirds of our planet, a living tapestry of shifting blues and greens that mirrors the sky above. Its waves dance rhythmically, whispering stories to the shore, while its depths cradle mysteries yet to be discovered. Beneath the surface lies a vibrant world—coral gardens, drifting schools of fish, and silent giants gliding through the deep. The ocean is both gentle and fierce, capable of serene stillness at dawn and thundering power during a storm. It shapes our climate, nurtures countless species, and has an ageless rhythm that humbles and inspires all who stand at its edge.</p>
+        </div>
+      </div>
 
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            
+            <img class="img-fluid" src="./img/cornwall.png" alt="Sandy Beach" style="width: 100%; height: auto;">
+            
+          </div>
+          <div class="col-sm">
+            
+            <h3>Cornwall</h3>
+            <p>
+              Cornwall is a picturesque county located in the southwest of England, renowned for its stunning coastline, sandy beaches, and dramatic cliffs. It is famous for its charming seaside towns, rich maritime history, and vibrant cultural heritage. Cornwall offers scenic walking trails, delicious local cuisine such as Cornish pasties, and a mild climate that attracts visitors year-round. The region is also known for its surfing spots, ancient landmarks, and beautiful natural landscapes, making it a popular destination for relaxation and outdoor activities.
+            </p>
 
+          </div>
+          <div class="col-sm">
+            
+                <h6>Make booking:</h6>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <a class="nav-link" href="#">Porth Beach</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="nav-link" href="#">Town Beach</a>
+                  </li>
+                  <li class="list-group-item">
+                    <a class="nav-link" href="#">Fistral Beach</a>
 
+          </div>
+        </div>
+      </div>
 
+      <!--places to stay-->
 
-    </div> 
+      <div class="container my-2" id="mostvisited">
+        <h2 class="mb-4">Corwall's most beautifull beaches:</h2>
+        <div class="row">
+          <!-- porth beach -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="./img/porthbeach.png" class="card-img-top" alt="Porth Beach">
+              <div class="card-body">
+                <h5 class="card-title">Porth Beach</h5>
+                <p class="card-text">
+                  Why Visit Porth Beach?
+                  Porth Beach strikes a rare balance of natural beauty, accessibility, and heritage. It offers:
+                  Peaceful, sheltered sands perfect for family days and leisurely swims.
+                  Rich archaeological history at Porth Island and throughout the village.
+                  Excellent facilities and local charm—cafés, pubs, clean amenities.
+                  Scenic walking routes and natural landscapes to explore and savor.
+                  Whether you’re planning a family outing, a quiet beach walk, or a bit of local history with your seaside experience, Porth Beach delivers in spades.
+                </p>
+                <div>
+                  <span class="btn btn-info btn-sm m-1">Mon - Wed</span>
+                  <span class="btn btn-info btn-sm m-1">Wed - Fri</span>
+                  <span class="btn btn-info btn-sm m-1">Fri - Sun</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- towan beach -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="./img/towanbeach.png" class="card-img-top" alt="Towan Beach">
+              <div class="card-body">
+                <h5 class="card-title">Towan Beach</h5>
+                <p class="card-text">
+                  Why Visit Towan Beach?
+                  Superb central location with full access to Newquay’s amenities while offering peaceful seaside charm.
+                  Beach Vibe: Bright, flat, and sandy—perfect for beach games, walking, or relaxing with a bucket and spade. The beach is lined with colourful huts and exudes a lively yet family-friendly spirit.
+                  Water Activities: Enjoy swimming, rock pooling, snorkeling, surfing, bodyboarding, or diving. The sheltered conditions make it especially appealing for beginners.
+                  Safe and sheltered for families, pet-friendly, and rich with beach activities.
+                  Iconic and unique, with its famous island home offering a dramatic and photogenic backdrop.
+                </p>
+                <div>
+                  <span class="btn btn-info btn-sm m-1">Mon - Wed</span>
+                  <span class="btn btn-info btn-sm m-1">Wed - Fri</span>
+                  <span class="btn btn-info btn-sm m-1">Fri - Sun</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fistral beach -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <img src="./img/fistralbeach.png" class="card-img-top" alt="Fistral Beach">
+              <div class="card-body">
+                <h5 class="card-title">Fistral Beach</h5>
+                <p class="card-text">
+                  Why Fistral Captures Hearts
+                  Whether you’re chasing surf, family time, coastal views, or a foodie fix, Fistral delivers. It’s a dynamic blend—surfing legend, natural beauty, accessibility, and seaside comfort all in one spectacular beach.
+                  The vibrant beachside community includes eateries like Rick Stein’s Fistral, The Fish House, The Stable, Sea Spray Café, and other casual and gourmet options
+                  Shops, cafés, and coastal paths (like the South West Coast Path) surround the beach—perfect for scenic walks, rock-pool discoveries, or a relaxed meal with sea views
+                </p>
+                <div>
+                  <span class="btn btn-info btn-sm m-1">Mon - Wed</span>
+                  <span class="btn btn-info btn-sm m-1">Wed - Fri</span>
+                  <span class="btn btn-info btn-sm m-1">Fri - Sun</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!--places to stay-->
+
+      <div class="text-center">
+        <form>
+          <h1 class="text-primary my-3">Contact Us</h1>
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <div class="container my-3">
+        <ul class="nav nav-inline">
+          <li class="nav-item">
+            <small><a class="nav-link active" href="#">Short-Break offers</a></small>
+          </li>
+          <li class="nav-item">
+            <small><a class="nav-link" href="#">stay@oceanview.com</a></small>
+          </li>
+          <li class="nav-item">
+            <small><a class="nav-link" href="#">info@oceanview.com</a></small>
+          </li>
+          <li class="nav-item">
+            <small class="nav-link">&copy;2025 Ocean View&reg;</small>
+          </li>
+        </ul>
+      </div>
+    </div>>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
