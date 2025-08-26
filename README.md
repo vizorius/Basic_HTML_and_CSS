@@ -8,6 +8,8 @@ Projects:
 - one-page website
 - personal Portfolio website
 
+
+
 - Paint Spraying company's Site
 
 This is an example home page for a Paint Spraying company. It is styled using CSS and includes a navbar, image containers, and a form.
